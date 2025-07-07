@@ -1,14 +1,14 @@
 name: Run
 
-# on:
-#   push:
-#     branches:
-#       - main
-#   schedule:
-#     - cron: '6 10 * * *'  # 在UTC时间上午10点6分运行
-
 on:
-  workflow_dispatch:  # 手动触发
+#  push: # 这部分是当有代码推送到 main 分支时触发，如果你不需要，可以保持注释
+#    branches:
+#      - main
+  schedule: # 取消注释这一行
+    - cron: '30 10 * * *'
+
+# on:
+# workflow_dispatch:  # 手动触发
 
 
 jobs:
