@@ -44,7 +44,7 @@ def modify_steps(account, password, min_steps, max_steps, attempts=3, timeout=20
 # 主程序
 def main():
     min_steps = 2100
-    max_steps = 6850
+    max_steps = 5850
 
     for account, password in account_password_pairs:
         result = modify_steps(account, password, min_steps, max_steps)
